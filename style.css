@@ -41,13 +41,42 @@ h1  {
     width: 70ch;
 
 }
-.profile__social{
+.profile__social,.footer__social{
     display: grid;
     grid-auto-flow: column;
     list-style: none;
-    gap: 15px;
+    gap: 25px;
     width: fit-content;
     margin: 0 auto;
     color: blue;
     font-size: 22px;
+}
+.footer {
+    background: black;
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 25px;
+    bottom: 0;
+}
+
+.footer__social {
+    margin: 0;
+    color: white;
+    justify-self: end;
+}
+/* Separator */ 
+.separator {
+
+    position: absolute;
+    width: 720px;
+    height: 0px;
+    left: 200px;
+    top: 798px;
+    border: 1px solid white;
 }
